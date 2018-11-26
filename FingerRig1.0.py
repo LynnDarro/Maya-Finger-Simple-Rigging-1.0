@@ -20,6 +20,7 @@ def CtrlUnit():
     return CtrlUnit
     
 mc.group (em = True, n = "FingerCtrlGrp_L_0")
+# I know this loop looks wierd, I just instinctly feel I should prepare for cases like with different finger numbers. For now I don't want to optimize this part.
 for i in range (0,15,1):
     if i == 0:
         mc.group (em = True, n = "FKCtrlGrp_Thumb_L_0")
